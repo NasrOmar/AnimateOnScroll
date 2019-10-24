@@ -35,7 +35,7 @@ body {
 }
 
 .active-opacity {
-	animation: active-opacity 2s;
+	animation: active-opacity 2s forwards;
 }
 
 @keyframes active-opacity {
@@ -50,7 +50,7 @@ body {
 }
 
 .active-fade-left {
-	animation: fade-left 1s;
+	animation: fade-left 1s forwards;
 }
 
 @keyframes fade-left {
@@ -71,7 +71,7 @@ body {
 }
 
 .active-fade-right {
-	animation: fade-right 1s;
+	animation: fade-right 1s forwards;
 }
 
 @keyframes fade-right {
