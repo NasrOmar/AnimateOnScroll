@@ -1,3 +1,43 @@
 @charset "UTF-8";
 /* CSS Document */
 
+* {
+	padding: 0;
+	margin : 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+}
+
+.text {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.box {
+	margin: 100px auto;
+	background-color: #E1E1E1;
+	width: 300px;
+	height: 300px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.hidden-opacity {
+	opacity: 0;
+}
+
+.active-opacity {
+	animation: active-opacity 2s;
+}
+
+@keyframes active-opacity {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
