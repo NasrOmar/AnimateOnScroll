@@ -20,7 +20,7 @@ body {
 }
 
 .box {
-	margin: 100px auto;
+	margin: 200px auto;
 	background-color: #E1E1E1;
 	width: 300px;
 	height: 300px;
@@ -29,6 +29,7 @@ body {
 	align-items: center;
 }
 
+/* Opacity */
 .hidden-opacity {
 	opacity: 0;
 }
@@ -40,4 +41,46 @@ body {
 @keyframes active-opacity {
 	0% {opacity: 0;}
 	100% {opacity: 1;}
+}
+
+/* Fade Left */
+.hidden-fade-left {
+	transform: translateX(-200px);
+	opacity: 0;
+}
+
+.active-fade-left {
+	animation: fade-left 1s;
+}
+
+@keyframes fade-left {
+	0% {
+		opacity: 0;
+		transform: translateX(-200px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+/* Fade Right */
+.hidden-fade-right {
+	transform: translateX(200px);
+	opacity: 0;
+}
+
+.active-fade-right {
+	animation: fade-right 1s;
+}
+
+@keyframes fade-right {
+	0% {
+		opacity: 0;
+		transform: translateX(200px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
 }
