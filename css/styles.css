@@ -17,6 +17,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	animation: active-opacity 2s;
 }
 
 .box {
@@ -35,7 +36,7 @@ body {
 }
 
 .active-opacity {
-	animation: active-opacity 2s forwards;
+	animation: active-opacity 1s forwards;
 }
 
 @keyframes active-opacity {
