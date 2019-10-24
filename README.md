@@ -1,2 +1,2 @@
 # AnimateOnScroll
-Animate on scroll using vanilla JavaScript
+Animate on scroll using JavaScript
